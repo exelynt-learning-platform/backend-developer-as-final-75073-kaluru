@@ -1,0 +1,1 @@
+package com.exelynt.booking.dto; import com.exelynt.booking.entity.ReservationStatus; import jakarta.validation.constraints.*; import java.time.LocalDateTime; public record ReservationRequest(@NotNull @Positive Long resourceId,@NotNull @FutureOrPresent LocalDateTime startTime,@NotNull @Future LocalDateTime endTime,ReservationStatus status) {}
