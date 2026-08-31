@@ -1,0 +1,1 @@
+package com.exelynt.booking.dto; import jakarta.validation.constraints.*; import java.math.BigDecimal; public record ResourceRequest(@NotBlank @Size(max=120) String name,@Size(max=2000) String description,@NotBlank @Size(max=60) String type,@NotBlank @Size(max=120) String location,@NotNull @DecimalMin("0.0") BigDecimal price,@NotNull Boolean available) {}
